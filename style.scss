@@ -30,14 +30,7 @@ body{
     &__comps{
         
         text-align: center;
-        &-menu{
-            width: 50%;
-            background-color: yellow;
-            border: 2px solid rgb(167, 123, 4);
-            display: grid;
-            grid-template-columns:repeat(2, 1fr) ;
-            
-        }
+        border: 2px solid rgb(190, 125, 3);
     }
     &__items{
         
@@ -75,5 +68,19 @@ body{
     &__third{
         border: 2px solid rgba(161, 50, 5, 0.651);
         padding: 5px;
+    }
+}
+.menu{
+    display: none;
+    &__open{
+        display: block;
+        background-color: rgb(99, 46, 2);
+        padding: 5px;
+        border: 2px solid rgb(211, 139, 5);
+        margin: 10px;
+        width: 100%;
+    }
+    &__item{
+        color: brown;
     }
 }
