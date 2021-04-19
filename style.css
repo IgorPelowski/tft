@@ -3,6 +3,11 @@ body {
   background-color: #220100;
   margin-right: 42px; }
 
+a {
+  color: #eeaf02;
+  cursor: pointer;
+  text-decoration: none; }
+
 .logo {
   font-size: large;
   color: #eeaf02;
@@ -33,6 +38,14 @@ body {
   .nav__champs {
     text-align: center; }
 
+.nav__comps::before {
+  content: "X ";
+  color: #eb0808; }
+
+.nav__comps:after {
+  content: " X";
+  color: #eb0808; }
+
 .nav__comps:hover, .nav__items:hover, .nav__champs:hover {
   background-color: #ad0303; }
 
@@ -58,11 +71,23 @@ body {
 .menu {
   display: none; }
   .menu__open {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     background-color: #632e02;
     padding: 5px;
     border: 2px solid #d38b05;
     margin: 10px;
     width: 100%; }
   .menu__item {
-    color: brown; }
+    color: #fcfcfc;
+    font-size: 15px; }
+
+.Main {
+  background-color: honeydew;
+  border: 2px solid wheat;
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  width: 100%;
+  padding: 5px; }
